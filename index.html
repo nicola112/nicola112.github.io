@@ -1,176 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
- <link rel="icon" type="image/png" href="images.png">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="icon" type="image/png" href="imges/img.png" />
+  <link rel="stylesheet" href="style.css" />
   <title>Nicola Portfolio</title>
 </head>
 
 <body>
+  <div class="menu">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Me</a></li> 
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
   <div class="comb">
-    <div class="menu">
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
+    <section id="home" class="Home">
+      <h1>Hi 👋, I’m Nicola<br>Front-End Developer & Designer<br>Creating clean, responsive, and user-friendly websites.</h1>
+    </section>
 
-    <div class="all">
-      <section id="home">
-        <div class="Home">
-          <h1>
-            Hi 👋, I’m Nicola<br>
-            Front-End Developer & Designer<br>
-            I love creating clean, responsive, and user-friendly websites that bring ideas to life.
-          </h1>
+    <section id="about" class="aboutme">
+      <h1>About Me</h1>
+      <p>Hi, I’m Nicola a front-end developer passionate about crafting clean, modern web experiences. I love building websites that are both visually appealing and technically strong, blending design with performance to create meaningful digital products.</p>
+    </section>
+
+    <section id="projects" class="cards">
+      <div class="card1">
+        <h2>Todo List App</h2>
+        <p>Manage tasks efficiently with local storage and responsive design.</p>
+        <div class="tech"><p>HTML</p><p>CSS</p><p>JavaScript</p></div>
+      </div>
+      <div class="card1">
+        <h2>React Weather App</h2>
+        <p>Displays live weather data for any city using the OpenWeather API.</p>
+        <div class="tech"><p>React</p><p>CSS</p><p>API</p></div>
+      </div>
+      <div class="card1">
+        <h2>Color Palette Generator</h2>
+        <p>Generate random beautiful color combinations at the click of a button.</p>
+        <div class="tech"><p>HTML</p><p>CSS</p><p>JavaScript</p></div>
+      </div>
+    </section>
+
+    <section id="skills" class="skill">
+      <div class="con"><h2>Front-End Skills:</h2><p>HTML</p><p>CSS</p><p>JavaScript</p><p>React</p></div>
+      <div class="con"><h2>Design Tools:</h2><p>Figma</p><p>Responsive Design</p><p>Flexbox</p><p>Grid</p></div>
+      <div class="con"><h2>Tools:</h2><p>Git</p><p>GitHub</p><p>VS Code</p></div>
+      <div class="con"><h2>Soft Skills:</h2><p>Problem Solving</p><p>Creativity</p><p>Teamwork</p></div>
+    </section>
+
+    <section id="experience" class="experience">
+      <h1>Experience</h1>
+      <div class="exp-cards">
+        <div class="exp-card">
+          <h2>💻 Front-End Developer</h2>
+          <p>Built responsive portfolio pages and small interactive web apps focusing on performance and accessibility.</p>
         </div>
-      </section>
-
-      <section id="about">
-        <div class="aboutme">
-          <h1>About Me</h1>
-          <p>
-            Hi, I’m Nicola — a passionate front-end developer who loves bringing ideas to life through clean
-            and responsive web design. I enjoy turning complex problems into simple, beautiful, and intuitive
-            solutions. Whether it’s building interactive interfaces or solving coding challenges, I’m always
-            excited to learn, experiment, and improve my skills.
-          </p>
+        <div class="exp-card">
+          <h2>⚛️ React Developer</h2>
+          <p>Developed reusable components and managed state with React hooks for fast and scalable front-end apps.</p>
         </div>
-      </section>
-
-      <section id="projects">
-        <div class="cards">
-          <div class="card1">
-            <h1>Todo List App</h1>
-            <p>A small web app where users can add, check, and delete tasks. Tasks are saved using local storage.</p>
-            <div class="tech">
-              <p>HTML</p>
-              <p>CSS</p>
-              <p>JavaScript</p>
-            </div>
-          </div>
-
-          <div class="card1">
-            <h1>React Weather App</h1>
-            <p>A small React app that fetches weather data from an API and displays temperature and conditions for any city.</p>
-            <div class="tech">
-              <p>React</p>
-              <p>CSS</p>
-              <p>API OpenWeather</p>
-            </div>
-          </div>
-
-          <div class="card1">
-            <h1>Color Palette Generator</h1>
-            <p>Displays random color combinations each time you click a button.</p>
-            <div class="tech">
-              <p>HTML</p>
-              <p>CSS</p>
-              <p>JavaScript</p>
-            </div>
-          </div>
+        <div class="exp-card">
+          <h2>🏆 Competitive Programmer</h2>
+          <p>Participated in algorithmic competitions like ACPC and PCPC, improving problem-solving and teamwork skills.</p>
         </div>
-      </section>
-
-      <section id="skills">
-        <div class="skill">
-          <div class="con">
-            <h1>Front-End Skills:</h1>
-            <p>HTML</p>
-            <p>CSS</p>
-            <p>JavaScript</p>
-            <p>React</p>
-          </div>
-
-          <div class="con">
-            <h1>Styling / Design:</h1>
-            <p>Responsive Web Design</p>
-            <p>Flexbox & Grid</p>
-            <p>Figma (Basic UI Design)</p>
-          </div>
-
-          <div class="con">
-            <h1>Tools:</h1>
-            <p>Git & GitHub</p>
-            <p>VS Code</p>
-            <p>Chrome DevTools</p>
-          </div>
-
-          <div class="con">
-            <h1>Soft Skills:</h1>
-            <p>Problem Solving</p>
-            <p>Teamwork</p>
-            <p>Creativity</p>
-            <p>Communication</p>
-          </div>
+        <div class="exp-card">
+          <h2>💼 Freelancer</h2>
+          <p>Delivered modern and optimized client projects using clean code, design principles, and SEO-friendly structure.</p>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="experience">
-      
-        <div class="allcard">
-          <div class="card">
-            <h2>🖥️ Front-End Developer</h2>
-            <p>Built responsive portfolio pages and small interactive web apps, focusing on layout,
-              accessibility, and smooth design.</p>
-          </div>
-
-          <div class="card">
-            <h2>⚛️ React App Development</h2>
-            <p>Created todo and weather apps using React, working with components, hooks (useState,
-              useEffect), and API calls.</p>
-          </div>
-
-          <div class="card">
-            <h2>🏆 Competitive Programmer (ACPC, PCPC)</h2>
-            <p>Participated in regional programming contests, solving algorithmic problems in C++ and
-              improving logic and teamwork.</p>
-          </div>
-
-          <div class="card">
-            <h2>🎓 Web Development Student</h2>
-            <p>Completed projects and assignments focused on HTML, CSS, JavaScript, and responsive design
-              techniques.</p>
-          </div>
-
-          <div class="card">
-            <h2>💡 Self-Learner & Problem Solver</h2>
-            <p>Continuously improving through online tutorials, documentation, and coding challenges on
-              platforms like Codeforces and LeetCode.</p>
-          </div>
-
-          <div class="card">
-            <h2>💼 Freelance / Personal Work</h2>
-            <p>Designed and developed small front-end projects for practice and coursework, including a
-              portfolio website, calculator app, and todo app using HTML, CSS, and JavaScript.</p>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact" class="contact-section">
-  <h1>Contact</h1>
-  <div class="socials">
-    <a href="https://wa.me/970594042995" target="_blank" class="icon whatsapp">
-      <i class="fa-brands fa-whatsapp"></i>
-    </a>
-    <a href="https://www.linkedin.com/in/nicola-rabee-404609362/" target="_blank" class="icon linkedin">
-      <i class="fa-brands fa-linkedin"></i>
-    </a>
-    <a href="https://github.com/nicola112" target="_blank" class="icon github">
-      <i class="fa-brands fa-github"></i>
-    </a>
+    <section id="contact" class="contact-section">
+      <h1>Contact</h1>
+      <div class="socials">
+        <a href="https://wa.me/970594042995" target="_blank" class="icon whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.linkedin.com/in/nicola-rabee-404609362/" target="_blank" class="icon linkedin"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/nicola112" target="_blank" class="icon github"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </section>
   </div>
-</section>
-    </div>
-  </div>
+
+  <footer>
+    <p>© <span>2025</span> Nicola Portfolio. All rights reserved.<br>Made with ❤️ and passion for code.</p>
+  </footer>
 </body>
 </html>
